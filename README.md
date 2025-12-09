@@ -82,7 +82,7 @@ O IP do ESP32 pôde ser descoberto pelo monitor Serial, conforme a figura abaixo
 <sub>Figura 01: Monitor Serial.</sub>
 </div>
 <div align="center">
-<img src="../assets/monitor.png" alt="Monitor Serial" style="max-width:900px; width:100%; height:auto;">
+<img src="monitor.png" alt="Monitor Serial" style="max-width:900px; width:100%; height:auto;">
 </div>
 
 <div align="center">
@@ -95,7 +95,7 @@ O Website pode ser visto na figura abaixo.
 <sub>Figura 02: Website.</sub>
 </div>
 <div align="center">
-<img src="../assets/site.png" alt="Site" style="max-width:900px; width:100%; height:auto;">
+<img src="site.png" alt="Site" style="max-width:900px; width:100%; height:auto;">
 </div>
 
 <div align="center">
