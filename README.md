@@ -73,3 +73,37 @@ Para corrigir esses riscos, pode-se:
 2. Implementar uma camada de autenticação simples (verificar login/senha antes de processar o GET).
 
 3. Limitar o tamanho da string header para evitar estouro de memória.
+
+## Ataque realizado
+
+O IP do ESP32 pôde ser descoberto pelo monitor Serial, conforme a figura abaixo. Com isso, descobrimos que o IP do nosso ESP32 era `10.128.0.191`.
+
+<div align="center">
+<sub>Figura 01: Monitor Serial.</sub>
+</div>
+<div align="center">
+<img src="../assets/monitor.png" alt="Monitor Serial" style="max-width:900px; width:100%; height:auto;">
+</div>
+
+<div align="center">
+<sub>Fonte: material produzido pela equipe, 2025.</sub>
+</div>
+
+O Website pode ser visto na figura abaixo.
+
+<div align="center">
+<sub>Figura 02: Website.</sub>
+</div>
+<div align="center">
+<img src="../assets/site.png" alt="Site" style="max-width:900px; width:100%; height:auto;">
+</div>
+
+<div align="center">
+<sub>Fonte: material produzido pela equipe, 2025.</sub>
+</div>
+
+Realizamos um ataque ao nosso sistema, se aproveitando da vulnerabilidade da falta de uma autenticação. O vídeo do ataque sendo realizado pode ser visto [aqui](https://drive.google.com/file/d/1iiFOfI65mCJ5bhBkQz8DKTxWqLFvNQAX/view?usp=sharing).
+
+Nesse ataque, uma pessoa não autorizada entrou no sistema utilizando os site `http://10.128.0.191/26/off` e `http://10.128.0.191/26/on`. Se o IP do ESP32 for descoberto, esse site pode ser facilmente acessado, controlando os LEDs de forma remota.
+
+
